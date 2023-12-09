@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Sign Up form practice</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="logo">
+          <a href="#" class="logo-link">
+            <img class="logo-img" src="./images/odin-lined.png" alt="logo">
+            ODIN
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <section class="form">
+          <div class="form__container">
+            <div class="form-section">
+              <p class="form__text">
+                This is not a rael online service! You know you need something like
+                this in your life to help realise your deepest dreams.
+                Sighn up <em>now</em> to get staertd.
+              </p>
+              <p class="form__text">You <em>know</em> you want to.</p>
+            </div>
+
+            
+
+            <form class="form__items" action="#" method="post">
+              <fieldset class="form__fieldset">
+                <legend class="form__text">Let's do this!</legend>
+                <div class="form__row">
+                  <p>
+                    <label for="form__first-name">FIRST NAME</label>
+                    <input id="form__first-name" type="text" >
+                  </p>
+                  <p>
+                    <label for="form__last-name">LAST NAME</label>
+                    <input id="form__last-name" type="text" >
+                  </p>
+                </div>
+                <div class="form__row">
+                  <p>
+                    <label for="form__email">EMAIL</label>
+                    <input id="form__email" type="email" >
+                  </p>
+                  <p>
+                    <label for="form__phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="form__phone">
+                  </p>
+                </div>
+                <div class="form__row">
+                  <p class="error">
+                    <label for="form__pass">PASSWORD</label>
+                    <input type="password" id="form__pass"
+                    required></input>
+                  </p>
+                  <p class="error">
+                    <label for="form__pass-confirmation" class="error">CONFIRM PASSWORD</label>
+                    <input type="password" name="pass-confirm" id="form__pass-confirmation"
+                    required>
+                    <p class="error-message">* Password do not match </p>
+                  </p>
+                </div>
+              </fieldset>
+            </form>
+
+            <div class="acc-section">
+              <button class="btn" type="submit">Create Account</button>
+              <p class="account">Already have an account?
+                <a href="#" class="account__link">Log in</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(../fonts/Norse-Bold.otf);
+}
+
+:root {
+  --color-btn: #596d48;
+  --color-light: #e5e7eb;
+
+  --header-width: clamp(20%, 45vw, 50vw);
+  --logo-width: min(100px, 100%);
+  --logo-height: min(150px, 100%);
+
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-arial: "Arial", sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-arial);
+  background-color: rgb(231, 231, 231);
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-width: 280px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.content {
+  display: flex;
+}
+
+.header {
+  background: no-repeat url("/images/main-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: var(--header-width);
+}
+
+.logo-link {
+  font-family: "Norse-Bold", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0 auto;
+  position: relative;
+  top: 130px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.logo-img {
+  object-fit: contain;
+  width: var(--logo-width);
+  height: var(--logo-height);
+}
+
+.main {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.form-section,
+.acc-section {
+  margin-left: 30px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex: 1;
+  background-color: rgb(231, 231, 231);
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+}
+
+.form__items {
+  width: 100%;
+  background-color: white;
+  box-shadow: -1px 10px 10px rgba(30, 30, 30, 0.1);
+}
+
+.form__text {
+  font-weight: bold;
+}
+
+.form__fieldset {
+  border: none;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 30px;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.form__fieldset legend {
+  padding-top: 30px;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+
+.form__row p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.form__row input {
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.form__items input[type="text"]:invalid,
+.form__items input[type="email"]:invalid {
+  border: 1px solid red;
+}
+.form__items input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 124, 186, 0.832);
+  border-radius: 2px;
+  box-shadow: 1px 2px 6px #808080db;
+}
+
+.form__row label {
+  flex: 1;
+  font-size: 0.6rem;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.3em;
+  padding-top: 2em;
+  font-family: var(--font-rajdhani);
+  font-weight: bold;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--color-btn);
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  padding: 0.8em 3em;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.account {
+  font-size: 0.8rem;
+  font-style: bold;
+}
+
+.account__link {
+  text-decoration: none;
+  color: var(--color-btn);
+}
+
+.error-message {
+  color: #cc0033;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+
+.error input[type="password"] {
+  border: 1px solid #cc0033;
+  outline: none;
+}
